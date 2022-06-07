@@ -7,13 +7,15 @@ export const COLORS = {
   whiteMiddle: 'rgba(249,249,249,0.85)',
   backgroundGray: '#f8f8f8',
   black: '#000',
+  shadowGray: '#b0b0b0',
+  green: '#11b777',
 };
 
 export const SPACING = {
   0: 0,
   XXS: 4,
-  XS: 8,
-  S: 12,
+  XS: 6,
+  S: 14,
   SM: 16,
   MD: 18,
   LG: 24,

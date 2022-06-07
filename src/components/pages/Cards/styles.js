@@ -16,4 +16,10 @@ export default StyleSheet.create({
     paddingLeft: SPACING.MD,
     position: 'absolute',
   },
+  flatList: {
+    position: 'absolute',
+    flex: 1,
+    height: '100%',
+    width: '100%',
+  },
 });
