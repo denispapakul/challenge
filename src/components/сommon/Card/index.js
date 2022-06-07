@@ -6,7 +6,7 @@ import ModalAction from '../ModalAction';
 
 import styles from './styles';
 
-const Card = ({title}) => {
+const Card = ({title, opened = false, onPress}) => {
   const [optionsShow, setOptionsShow] = useState(false);
 
   return (
@@ -15,9 +15,9 @@ const Card = ({title}) => {
         <Text style={styles.title}>{title}</Text>
         <TouchableOpacity
           style={styles.iconWrapper}
-          onPress={() => setOptionsShow(true)}
+          onPress={() => (opened ? onPress() : setOptionsShow(true))}
         >
-          <Icon name="options" size={24} />
+          <Icon name={opened ? 'close' : 'options'} size={24} />
         </TouchableOpacity>
       </View>
       <ModalAction

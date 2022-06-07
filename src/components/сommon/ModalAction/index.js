@@ -59,7 +59,11 @@ const ModalAction = ({card, visible, setVisible}) => {
           style={styles.absolute}
         >
           <View style={styles.cardWrapper}>
-            <Card title={card.title} />
+            <Card
+              title={card.title}
+              opened={true}
+              onPress={() => setVisible(false)}
+            />
             <View style={styles.actionWrapper}>
               {actions.map(item => (
                 <ButtonAction
