@@ -7,16 +7,20 @@
  */
 
 import React from 'react';
-import {SafeAreaView, StyleSheet} from 'react-native';
+import {StyleSheet} from 'react-native';
 import {Provider} from 'react-redux';
+import {SafeAreaProvider} from 'react-native-safe-area-context';
+
+import Cards from './src/components/pages/Cards';
 
 import store from './src/redux/store';
 
 const App = () => {
   return (
     <Provider store={store}>
-      <SafeAreaView>
-      </SafeAreaView>
+      <SafeAreaProvider>
+        <Cards />
+      </SafeAreaProvider>
     </Provider>
   );
 };
