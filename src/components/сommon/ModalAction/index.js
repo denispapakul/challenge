@@ -1,5 +1,5 @@
 import React, {useMemo} from 'react';
-import {Modal, Share, TouchableOpacity, View} from 'react-native';
+import {Modal, Share, TouchableOpacity, View, Alert} from 'react-native';
 import {BlurView} from '@react-native-community/blur';
 
 import Card from '../Card';
@@ -27,6 +27,19 @@ const ModalAction = ({card, visible, setVisible}) => {
       {
         title: 'Delete',
         icon: 'remove',
+        onPress: () =>
+          Alert.alert(
+            'Confirm delete',
+            `This will delete the Food Style and all its settings?`,
+            [
+              {
+                text: 'Delete',
+                style: 'destructive',
+                onPress: () => {},
+              },
+              {text: 'Cancel'},
+            ],
+          ),
       },
     ],
     [card.title],
@@ -45,7 +58,7 @@ const ModalAction = ({card, visible, setVisible}) => {
           onPress={() => setVisible(false)}
           style={styles.absolute}
         >
-          <View style={{top: 308, flex: 1}}>
+          <View style={styles.cardWrapper}>
             <Card title={card.title} />
             <View style={styles.actionWrapper}>
               {actions.map(item => (

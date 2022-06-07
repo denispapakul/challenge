@@ -12,4 +12,8 @@ export default StyleSheet.create({
     marginTop: SPACING.LG,
     marginRight: SPACING.LG,
   },
+  cardWrapper: {
+    top: 308,
+    flex: 1,
+  },
 });

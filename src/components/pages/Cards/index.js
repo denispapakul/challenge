@@ -3,6 +3,7 @@ import {View, useWindowDimensions, FlatList} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {useSelector} from 'react-redux';
+import {useQuery, gql} from '@apollo/client';
 
 import BottomButton from '../../сommon/BottomButton';
 import Card from '../../сommon/Card';
