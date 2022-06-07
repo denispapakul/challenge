@@ -13,7 +13,11 @@ const ModalAction = ({card, visible, setVisible}) => {
       {
         title: 'Share',
         icon: 'share',
-        onPress: async () => Share.share({message: card.title}),
+        onPress: async () =>
+          Share.share({
+            message: card.title,
+            url: 'https://cards.foodstyles.com/z0fc9mf48zfF',
+          }),
       },
       {
         title: 'Duplicate',

@@ -30,6 +30,7 @@ export default StyleSheet.create({
     lineHeight: 22,
     marginRight: SPACING.S,
     flex: 1,
+    fontFamily: 'ProximaNovaA-Bold',
   },
   iconWrapper: {
     alignSelf: 'flex-start',

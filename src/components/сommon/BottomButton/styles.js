@@ -23,6 +23,7 @@ export default StyleSheet.create({
     fontSize: 18,
     lineHeight: 38,
     textAlignVertical: 'center',
+    fontFamily: 'ProximaNovaA-Bold',
   },
   shadow: {
     shadowColor: COLORS.shadowGray,

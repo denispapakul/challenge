@@ -9,5 +9,7 @@ export default StyleSheet.create({
   title: {
     lineHeight: 50,
     color: COLORS.green,
+    fontFamily: 'ProximaNovaA-Semibold',
+    fontSize: 15,
   },
 });
